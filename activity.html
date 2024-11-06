@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <style>
+         .sidebar {
+    width: 200px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar h1 {
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+        body { font-family: Arial, sans-serif; }
+        .section { margin: 2em; }
+        h2 { color: #333; }
+        form, table { margin-top: 1em; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Dashboard</h1>
+        <ul>
+          <li><a href="/admin/financials.html">Financials</a></li>
+          <li><a href="/admin/engagement.html">Engagement</a></li>
+          <li><a href="/admin/activity.html">Activity</a></li>
+          <li><a href="/admin/top_products.html">Top Products</a></li>
+        </ul>
+      </div>
+
+<div class="section">
+    <h2>Activity</h2>
+    <form>
+        <label>Week:</label>
+        <input type="text" name="week" placeholder="Week" required>
+        <label>Guest:</label>
+        <input type="number" name="guest" placeholder="Guest" required>
+        <label>User:</label>
+        <input type="number" name="user" placeholder="User" required>
+        <button type="button">Add Activity</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>Week</th>
+            <th>Guest</th>
+            <th>User</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Example Week</td>
+            <td>Example Guest</td>
+            <td>Example User</td>
+            <td><button type="button">Delete</button></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

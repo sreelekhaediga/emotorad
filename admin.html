@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .sidebar h1 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .dashboard-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .dashboard-card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .dashboard-card p {
+      font-size: 1.2rem;
+    }
+
+    .dashboard-card .icon {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 1.5rem;
+      color: #007bff;
+    }
+
+    .chart-container {
+      width: 100%;
+      height: 300px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Additional styles for charts and other components can be added here */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1>Dashboard</h1>
+      <ul>
+        <li><a href="/admin/financials.html">Financials</a></li>
+        <li><a href="/admin/engagement.html">Engagement</a></li>
+        <li><a href="/admin/activity.html">Activity</a></li>
+        <li><a href="/admin/top_products.html">Top Products</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="dashboard-card" id="financials">
+        <h2>Financials</h2>
+        <p><span class="icon">💰</span>Total Revenues: $2,129,430 (increase of 2.5%)</p>
+        <p><span class="icon">📊</span>Total Transactions: 1,520 (increase of 1.7%)</p>
+      </div>
+      <div class="dashboard-card" id="engagement">
+        <h2>Engagement</h2>
+        <p><span class="icon">👍</span>Total Likes: 9,721 (increase of 1.4%)</p>
+        <p><span class="icon">👥</span>Total Users: 9,721 (increase of 4.2%)</p>
+      </div>
+      <div class="dashboard-card" id="activity">
+        <h2>Activity</h2>
+        <div class="chart-container">
+          <!-- Chart for user activity over 4 weeks will be rendered here -->
+        </div>
+      </div>
+      <div class="dashboard-card" id="top-products">
+        <h2>Top Products</h2>
+        <p>Basic Tees: 55%</p>
+        <p>Custom Short Pants: 31%</p>
+        <p>Super Hoodies: 14%</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    // JavaScript code for rendering charts and handling interactivity can be added here
+  </script>
+</body>
+</html>

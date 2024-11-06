@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Products</title>
+    <style>
+         .sidebar {
+    width: 200px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar h1 {
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+        body { font-family: Arial, sans-serif; }
+        .section { margin: 2em; }
+        h2 { color: #333; }
+        form, table { margin-top: 1em; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Dashboard</h1>
+        <ul>
+          <li><a href="/admin/financials.html">Financials</a></li>
+          <li><a href="/admin/engagement.html">Engagement</a></li>
+          <li><a href="/admin/activity.html">Activity</a></li>
+          <li><a href="/admin/top_products.html">Top Products</a></li>
+        </ul>
+      </div>
+
+<div class="section">
+    <h2>Top Products</h2>
+    <form>
+        <label>Product Name:</label>
+        <input type="text" name="product_name" placeholder="Product Name" required>
+        <label>Percentage:</label>
+        <input type="number" name="percentage" placeholder="Percentage" required>
+        <label>Date:</label>
+        <input type="date" name="date" required>
+        <button type="button">Add Product</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Percentage</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Example Product</td>
+            <td>50%</td>
+            <td>2024-11-06</td>
+            <td><button type="button">Delete</button></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
